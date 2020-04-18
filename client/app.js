@@ -27,6 +27,7 @@ const login = event => {
         loginForm.classList.remove('show');
         messageSection.classList.add('show');
     }
+    socket.emit('join', userName);
 };
 
 function sendMessage(event) {
